@@ -1,6 +1,6 @@
 {
   "name": "movie--useeffect",
-  "homepage": "http://{avichaiN}.github.io/{Movies}",
+  "homepage": "http://avichaiN.github.io/Movies",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
