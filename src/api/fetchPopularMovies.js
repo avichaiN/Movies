@@ -35,7 +35,7 @@ const fetchPopularMoviesPoster = async (movieId, setMovies, setDisplaySearch, se
             popularMovies.push(response)
         })
 
-    if (popularMovies.length === 10) {
+    if (popularMovies.length === 5) {
         renderMovies(setMovies, setDisplaySearch, setMoreInfo, setMoreInfoId, popularMovies)
     }
 }

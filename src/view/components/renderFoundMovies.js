@@ -7,7 +7,6 @@ const renderFoundMovies = (setMovies, movies, setMoreInfo, setMoreInfoId, setDis
 
     if (movies !== undefined) {
         const moviesMap = movies.map((movie) => {
-
             if (movie.Poster === 'N/A' || movie.Type === 'series') {
                 return null
             }

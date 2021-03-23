@@ -1,10 +1,13 @@
 const renderMovies = (setMovies, setDisplaySearch, setMoreInfo, setMoreInfoId, movies) => {
-        const handleMoreInfo = (movieId) => {
+    const handleMoreInfo = (movieId) => {
         setMoreInfo(true)
         setMoreInfoId(movieId)
     }
 
     const moviesMap = movies.map(movie => {
+        if (movie.poster === '') {
+            return null
+        }
         return (
             <div className='singleMovie card' key={movie.IMDB}>
                 <img className='card-img-top' alt={movie.title} src={movie.poster} />

@@ -33,7 +33,7 @@ const fetchUpComingMoviesPoster = async (movieId, setMovies, setDisplaySearch, s
             upComingMovies.push(response)
         })
 
-    if (upComingMovies.length === 10) {
+    if (upComingMovies.length === 5) {
         renderMovies(setMovies, setDisplaySearch, setMoreInfo, setMoreInfoId, upComingMovies)
     }
 }
